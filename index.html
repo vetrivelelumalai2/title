@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live TV</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Live TV</h2>
+
+<p>Sports</p>
+<button type="button" class="collapsible" onclick="window.location.href = 'https://nbabite.com/';">NBA</button>
+<button type="button" class="collapsible" onclick="window.location.href = 'https://streamdaddy.live/hd-football-live-stream/';">Soccer</button>
+<button type="button" class="collapsible" onclick="window.location.href = 'https://methstreams.com/cfbstreams/';">College Football</button>
+<button type="button" class="collapsible" onclick="window.location.href = 'https://reddit.mma-streams.live';">UFC</button>
+<button type="button" class="collapsible" onclick="window.location.href = 'https://mlbshow.com';">Baseball</button>
+<button type="button" class="collapsible">Click here if other links dont work</button>
+<div class="content">
+  <p><a href="https://v2.sportsurge.net/">SportSurge</a></p>
+  <p><a href="http://buffstream.io/">Buffstreams</a></p>
+  <p><a href="https://www.strikeout.nu/">Strikeout</a></p>
+  <p><a href="http://123tvnow.com/watch/espn-2/">ESPN</a></p>
+  <p><a href="http://123tvnow.com/watch/espn2/">ESPN2</a></p>
+  <p><a href="http://123tvnow.com/watch/tnt/">TNT</a></p>
+  <p><a href="http://123tvnow.com/watch/fox-sports-1/">FS1</a></p>
+  <p><a href="http://123tvnow.com/watch/fox-sports-2-fs2-live/">FS2</a></p>
+</div>
+
+<p>News</p>
+<button type="button" class="collapsible">CNN (Click to Expand)</button>
+<div class="content">
+    <p><a href="https://ustvgo.tv/cnn-live-streaming-free/">Server 1</a></p>
+    <p><a href="https://watchnewslive.tv/cnn-live-streaming/">Server 2</a></p>
+    <p><a href="http://123tvnow.com/watch/cnn-2/">Server 3</a></p>
+</div>
+<button type="button" class="collapsible">MSNBC (Click to Expand)</button>
+<div class="content">
+    <p><a href="https://ustvgo.tv/msnbc/">Server 1</a></p>
+    <p><a href="https://watchnewslive.tv/watch-msnbc-live-stream-24-7-free/">Server 2</a></p>
+    <p><a href="http://123tvnow.com/watch/msnbc/">Server 3</a></p>
+</div>
+<button type="button" class="collapsible">Fox News (Click to Expand)</button>
+<div class="content">
+    <p><a href="https://ustvgo.tv/fox-news-live-streaming-free/">Server 1</a></p>
+    <p><a href="https://watchnewslive.tv/fox-news-live-stream-usa/">Server 2</a></p>
+    <p><a href="http://123tvnow.com/watch/fox-news-hd/">Server 3</a></p>
+</div>
+
+<p>Entertainment</p>
+
+<button type="button" class="collapsible" onclick="window.location.href = 'https://lookmovie2.to/shows/view/11280740-severance-2021';">Severance</button>
+
+<button type="button" class="collapsible" onclick="window.location.href = 'https://lookmovie2.to/shows/view/1837576-scandal-2012';">Scandal</button>
+
+<button type="button" class="collapsible" onclick="window.location.href = 'https://lookmovie2.to/shows/view/2211129-the-mindy-project-2012';">The Mindy Project</button>
+
+<button type="button" class="collapsible">ABC (Click to Expand)</button>
+<div class="content">
+  <p><a href="https://ustvgo.tv/abc-live-streaming-free/">Server 1</a></p>
+  <p><a href="https://watchnewslive.tv/abc/">Server 2</a></p>
+  <p><a href="http://123tvnow.com/watch/abc/">Server 3</a></p>
+</div>
+<button type="button" class="collapsible">NBC (Click to Expand)</button>
+<div class="content">
+  <p><a href="https://ustvgo.tv/nbc/">Server 1</a></p>
+  <p><a href="https://watchnewslive.tv/nbc/">Server 2</a></p>
+  <p><a href="http://123tvnow.com/watch/nbc-live-stream-now/">Server 3</a></p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
